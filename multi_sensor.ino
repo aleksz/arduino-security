@@ -2,7 +2,6 @@ const char SHORT_CISRCUIT = 'S';
 const char SECURE = 'Y';
 const char ALARM = 'A';
 const char CUT = 'C';
-const char NOT_KNOWN = 'U';
 const char HEALTH_CHECK = 'H';
 
 const int ledPin = 13;      // select the pin for the LED
@@ -12,7 +11,7 @@ int sensorValue[] = {0, 0};  // variable to store the value coming from the sens
 int alarmThreshold[] = {150, 150};
 int cutThreshold[] = {900, 900};
 int secureThreshold[] = {70, 70};
-char sensorState[] = {NOT_KNOWN, NOT_KNOWN};
+char sensorState[] = {SECURE, SECURE};
 int coolDownMillis = 500;
 unsigned long alarmCooldownStart[2];
 boolean alarmRaised[2];
