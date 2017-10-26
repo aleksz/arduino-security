@@ -8,9 +8,9 @@ const int ledPin = 13;      // select the pin for the LED
 
 int sensorPins[] = {A0, A1};
 int sensorValue[] = {0, 0};  // variable to store the value coming from the sensor
-int alarmThreshold[] = {150, 150};
+int alarmThreshold[] = {280, 280};
 int cutThreshold[] = {900, 900};
-int secureThreshold[] = {70, 70};
+int secureThreshold[] = {125, 125};
 char sensorState[] = {SECURE, SECURE};
 int coolDownMillis = 500;
 unsigned long alarmCooldownStart[2];
